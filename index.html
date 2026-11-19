@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZERO GATE｜한빛 아카데미 — 세계관·인물 소개</title>
+<meta name="description" content="크랙 스토리 《ZERO GATE｜한빛 아카데미》의 세계관, 10년 연표, 장소와 등장인물 소개">
+<meta property="og:title" content="ZERO GATE｜한빛 아카데미">
+<meta property="og:description" content="게이트가 열린 지 10년. 판독기에 뜬 당신의 결과: 측정 불가. 세계관·연표·등장인물 소개.">
+<meta property="og:image" content="img/banner_world.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070b1c; --bg2:#0d1430; --card:#111a37; --line:rgba(214,226,255,.16);
+  --text:#e8eefc; --muted:#a2aecd; --soft:#c7d6ff; --gate:#5b97ff; --gate2:#8fb8ff; --red:#ff5a6e;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.serif{font-family:"Gowun Batang",serif}
+.latin{font-family:"Cinzel",serif;letter-spacing:.28em}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(7,11,28,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a{flex:0 0 auto;padding:12px 12px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;white-space:nowrap}
+nav a:hover,nav a:focus{color:var(--text)}
+
+/* 히어로 */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/bg_zerozone.webp) center/cover;opacity:.42;filter:blur(1px)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 10%,rgba(91,151,255,.22),transparent 55%),linear-gradient(180deg,rgba(7,11,28,.15),var(--bg) 94%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:36px;align-items:center;padding-top:48px;padding-bottom:52px}
+.covers{position:relative;aspect-ratio:2/3;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 40px rgba(91,151,255,.18)}
+.covers img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:fade 16s infinite}
+.covers img:nth-child(1){animation-delay:0s}.covers img:nth-child(2){animation-delay:4s}.covers img:nth-child(3){animation-delay:8s}.covers img:nth-child(4){animation-delay:12s}
+@keyframes fade{0%{opacity:0}4%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.covers img{animation:none}.covers img:first-child{opacity:1}}
+.logo{font-family:"Cinzel Decorative",serif;font-size:clamp(30px,5.6vw,54px);letter-spacing:.06em;color:#f4f7ff;text-shadow:0 0 22px rgba(91,151,255,.75);line-height:1.1}
+.hero h1{margin:.15em 0 .45em;font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:clamp(28px,4.6vw,44px);line-height:1.25;text-shadow:0 0 18px rgba(91,151,255,.5)}
+.hero p{color:var(--muted);margin:.35em 0}
+.sys{display:inline-block;margin-top:16px;padding:9px 14px;border:1px solid rgba(143,184,255,.4);background:rgba(13,20,48,.75);font-size:14.5px;color:var(--soft)}
+.dday{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;color:#ffd0d6}
+.dday i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (max-width:680px){.hero .wrap{grid-template-columns:1fr;gap:24px;padding-top:28px}.covers{max-width:250px;width:100%;margin:0 auto}}
+
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.sec-head{text-align:center;margin-bottom:30px}
+.sec-head .latin{font-size:13px;color:var(--gate2)}
+.sec-head h2{margin:.25em 0 0;font-family:"Gowun Batang",serif;font-size:clamp(24px,3.6vw,32px)}
+.divider{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px auto 0;width:220px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+.divider i{width:12px;height:12px;border-radius:50%;border:2px solid var(--gate2);box-shadow:0 0 10px rgba(91,151,255,.6)}
+.lead{max-width:680px;margin:0 auto 28px;text-align:center;color:var(--muted)}
+
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);padding:20px 20px 18px}
+.box h3{margin:0 0 8px;font-family:"Gowun Batang",serif;font-size:19px}
+.box p,.box li{color:var(--muted);font-size:15px}
+.box ul{margin:0;padding-left:18px}
+.box b{color:var(--text);font-weight:500}
+.quote{border-left:2px solid var(--gate);padding:4px 0 4px 14px;margin:12px 0;color:var(--soft);font-family:"Gowun Batang",serif}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.chips span{font-size:13px;padding:3px 9px;border:1px solid var(--line);color:var(--soft)}
+.gauge{margin:12px 0 6px;height:10px;background:linear-gradient(90deg,#3d6fd6 0%,#7fa7ff 55%,#ff8a5b 60%,#ff5a6e 80%,#141414 100%);border-radius:2px}
+.gauge-lab{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--soft);font-weight:500;font-size:13px}
+.notice{font-size:14px;color:var(--soft);background:rgba(91,151,255,.08);border:1px solid rgba(143,184,255,.3);padding:8px 12px;margin:10px 0 0;font-family:"Gowun Batang",serif}
+
+/* 연표 */
+.tl{position:relative;max-width:760px;margin:0 auto;padding-left:28px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gate),rgba(91,151,255,.15) 80%,var(--red))}
+.ev{position:relative;margin:0 0 22px}
+.ev::before{content:"";position:absolute;left:-26px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--gate2)}
+.ev .when{font-family:"Cinzel",serif;font-size:14px;letter-spacing:.06em;color:var(--gate2)}
+.ev h3{margin:2px 0 4px;font-family:"Gowun Batang",serif;font-size:18px}
+.ev p{margin:0;color:var(--muted);font-size:15px}
+.ev .news{display:inline-block;margin-top:6px;font-size:13px;color:var(--soft);border:1px solid var(--line);padding:2px 8px}
+.ev.start::before{background:var(--gate);box-shadow:0 0 12px var(--gate)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;margin-left:6px;vertical-align:middle;border:1px solid var(--gate);color:var(--gate2)}
+.tag.other{border-color:var(--line);color:var(--muted)}
+.ev.redacted .when,.ev.redacted h3{color:#5b6680}
+.bar{display:inline-block;height:1em;vertical-align:-2px;background:#000;border:1px solid #1d2540}
+.stamp{display:inline-block;margin-left:8px;padding:0 8px;border:2px solid var(--red);color:var(--red);font-size:12px;font-weight:700;transform:rotate(-4deg);letter-spacing:.1em}
+.ev.final{margin-top:30px;padding:26px 18px;border:1px solid rgba(255,90,110,.35);background:linear-gradient(rgba(7,11,28,.55),rgba(7,11,28,.85)),url(img/bg_flood.webp) center/cover}
+.ev.final::before{left:-26px;border-color:var(--red);background:var(--red);box-shadow:0 0 14px var(--red)}
+.ev.final .when{color:#ffb1bb;font-size:16px}
+.ev.final h3{font-size:30px;margin:4px 0}
+
+/* 장소 */
+.places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:760px){.places{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.place{position:relative;aspect-ratio:3/2;overflow:hidden;border:1px solid var(--line);margin:0}
+.place img{width:100%;height:100%;object-fit:cover}
+.place figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;background:linear-gradient(transparent,rgba(5,8,22,.92));font-family:"Gowun Batang",serif;font-size:14px}
+.place figcaption small{display:block;color:var(--muted);font-family:"Noto Sans KR",sans-serif;font-size:12px}
+
+/* 인물 */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:22px}
+.filters button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:760px){.chars{grid-template-columns:1fr}}
+.char{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.char[hidden]{display:none}
+.char .pic{aspect-ratio:960/657;overflow:hidden;background:#0a1028}
+.char .pic img{width:100%;height:100%;object-fit:cover}
+.char .body{padding:14px 16px 16px}
+.char .aff{font-size:13px;color:var(--gate2)}
+.char h3{margin:2px 0 6px;font-family:"Gowun Batang",serif;font-size:21px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tags span{font-size:12.5px;padding:2px 8px;border:1px solid var(--line);color:var(--muted)}
+.char p{margin:0 0 8px;color:var(--muted);font-size:15px}
+.line{font-family:"Gowun Batang",serif;color:var(--soft);font-size:15px;border-top:1px solid var(--line);padding-top:10px}
+.char.mystery h3{letter-spacing:.3em}
+
+/* 시작·엔딩 */
+.starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.starts{grid-template-columns:1fr}}
+.lvl{display:inline-block;font-size:12px;padding:1px 8px;border:1px solid var(--line);color:var(--soft);margin-left:6px}
+.endings{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:20px}
+@media (max-width:760px){.endings{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.end{background:var(--card);border:1px solid var(--line);padding:14px 12px;text-align:center}
+.end .g{font-family:"Cinzel",serif;font-size:13px;color:var(--gate2)}
+.end h4{margin:4px 0;font-family:"Gowun Batang",serif;font-size:16px}
+.end p{margin:0;font-size:13px;color:var(--muted)}
+.end.sr{border-color:rgba(143,184,255,.5);box-shadow:0 0 18px rgba(91,151,255,.15)}
+
+footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13px}
+.cta{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid var(--gate2);color:var(--text);text-decoration:none;font-weight:700;background:rgba(91,151,255,.12)}
+:focus-visible{outline:2px solid var(--gate2);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<nav aria-label="목차"><div class="wrap">
+  <a href="#world">세계관</a><a href="#timeline">연표</a><a href="#places">장소</a><a href="#hanbit">등장인물</a><a href="#start">시작·엔딩</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="covers" role="img" aria-label="대표 이미지: 서하늘, 강예린, 이나비, 백서연이 차례로 나온다">
+    <img src="img/cover1.webp" alt="" width="720" height="1080"><img src="img/cover2.webp" alt="" width="720" height="1080"><img src="img/cover3.webp" alt="" width="720" height="1080"><img src="img/cover4.webp" alt="" width="720" height="1080">
+  </div>
+  <div>
+    <div class="logo">ZERO GATE</div>
+    <h1>한빛 아카데미</h1>
+    <p>게이트가 열린 지 10년. 대한민국은 히어로를 공무원으로 뽑는다.</p>
+    <p>국립 히어로 아카데미 한빛의 입학식 날, 인장 판독기에 뜬 당신의 결과는 이랬다.</p>
+    <div class="sys serif">[계열: 특이(판별 실패) · 잔향: 0 · 등급: 측정 불가]</div><br>
+    <div class="dday"><i></i>대범람까지 D-255</div>
+  </div>
+</div></header>
+
+<main>
+<section id="world"><div class="wrap">
+  <div class="sec-head"><div class="latin">THE WORLD</div><h2>문이 열린 지 10년</h2><div class="divider"><i></i></div></div>
+  <p class="lead">서울 한복판 하늘에는 10년째 닫히지 않는 문이 걸려 있다. 사람들은 아침마다 날씨 대신 밤사이 열린 문 지도를 보고, 그 문을 그냥 올려다보며 출근한다.</p>
+  <div class="grid2">
+    <div class="box">
+      <h3>게이트</h3>
+      <p>허공에 푸른 금이 그어지고, 1~3초 뒤 금이 벌어져 문이 된다. 국가게이트관리국(국관)이 <b>1시간 안에 F~S 등급</b>을 판정하고, <b>7일 안에</b> 던전 보스를 쓰러뜨리거나 코어를 부수지 못하면 <b>브레이크</b> — 몬스터가 밖으로 쏟아진다.</p>
+      <table><tr><th>등급</th><th>비율</th><th>층</th><th>문의 색</th></tr>
+      <tr><td>F~E</td><td>65%</td><td>1~2</td><td>연한 하늘색</td></tr>
+      <tr><td>D~C</td><td>28%</td><td>2~4</td><td>짙은 남색</td></tr>
+      <tr><td>B~A</td><td>6.8%</td><td>4~9</td><td>청보라 · 보라</td></tr>
+      <tr><td>S</td><td>0.2%</td><td>10+</td><td>검은 테에 흰 속</td></tr></table>
+      <p class="notice">그리고 2016년부터 한 번도 닫힌 적 없는 문, 등급 측정 불가의 <b>제로 게이트</b>.</p>
+    </div>
+    <div class="box">
+      <h3>각성과 인장</h3>
+      <p>게이트 기운에 노출된 뒤 능력이 깨어나면 손목 안쪽에 <b>인장</b>이 떠오른다. 인장의 모양이 계열을 말한다. 각성자는 인구의 0.3%, 등급은 E~S, 그리고 판독 불가 <b>EX</b>.</p>
+      <div class="chips"><span>○ 강화</span><span>△ 방출</span><span>□ 조작</span><span>◇ 변이</span><span>◉ 감응</span><span>☆ 소환</span><span>∿ 특이(모양이 계속 바뀜)</span></div>
+      <p class="quote">"판독기는 거짓말을 안 해. 측정 불가가 뜨면, 그건 판독기가 모르는 거야."</p>
+    </div>
+    <div class="box">
+      <h3>잔향 — 힘의 대가</h3>
+      <p>능력을 쓸수록 몸에 게이트의 기운이 쌓인다. 0~100으로 재고, 하루 5씩 빠진다. 빨리 빼는 <b>정화</b> 시술은 1회 300만 원.</p>
+      <div class="gauge" aria-hidden="true"></div>
+      <div class="gauge-lab"><span>0</span><span>60 붉은손</span><span>80 역류</span><span>100</span></div>
+      <ul><li><b>60+</b> 인장이 붉어지고 두통·환청 — 은어로 '붉은손'</li><li><b>80+</b> 역류(폭주). 인장이 검게 번진다</li><li><b>100</b> 게이트화 — 사람이 작은 게이트가 된다. 공식 기록 3건</li></ul>
+    </div>
+    <div class="box">
+      <h3>히어로와 헌터</h3>
+      <table><tr><th></th><th>히어로(공무)</th><th>헌터(민간)</th></tr>
+      <tr><td>자격</td><td>한빛 졸업·국관 특채 + 라이선스 1~5급</td><td>길드 가입 + 헌터 등록</td></tr>
+      <tr><td>수입</td><td>연봉 + 출동 수당</td><td>입찰 공략 수익, 방송·광고</td></tr>
+      <tr><td>의무</td><td>출동 명령 거부 불가</td><td>없음(보험도 없음)</td></tr>
+      <tr><td>이미지</td><td>국민의 영웅, 공무원</td><td>연예인·스트리머, 돈</td></tr></table>
+    </div>
+    <div class="box">
+      <h3>세력</h3>
+      <ul>
+        <li><b>국가게이트관리국(국관)</b> — 본부는 광화문 지하 '광화문 언더'. 국장은 비각성자 첫 국장 강서준. 안에서도 "막는 게 일"이라는 쪽과 "게이트는 자원"이라는 쪽이 부딪친다.</li>
+        <li><b>헌터 협회 · 5대 길드</b> — 플레임 · 백호 · 아르고 · 은하 · 묵. 국관 입찰로 공략권을 따 마석으로 번다.</li>
+        <li><b>태성 그룹</b> — 마석 발전과 장비를 쥔 재벌. 한빛의 최대 후원사.</li>
+        <li><b>열린문</b> — 게이트를 '구원으로 가는 문'이라 믿는 교단. 수장은 얼굴 없는 목소리 '문지기'.</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>2026년의 일상</h3>
+      <ul>
+        <li><b>문알림</b> — 국관 앱 푸시. <i>[청] 마포구 망원동 F급 개방 · 반경 200m 우회</i></li>
+        <li><b>마석</b> — 국내 전력의 31%. 게이트가 줄면 전기요금이 오른다.</li>
+        <li><b>문숨</b> — 밤 11시 무렵 한강 쪽 하늘이 희미하게 밝아졌다 어두워진다. 10년째 매일 밤.</li>
+        <li><b>은어</b> — 문따기(공략) · 붉은손 · 검은손 · 맹물 · 7초 세대 · 0찍</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="timeline"><div class="wrap">
+  <div class="sec-head"><div class="latin">TIMELINE</div><h2>10년의 기록</h2><div class="divider"><i></i></div></div>
+  <p class="lead">이 세계 사람이라면 누구나 아는 일들. 2026년 가을의 기록은 국관이 기밀로 묶어 두었다.</p>
+  <div class="tl">
+    <div class="ev"><div class="when">2016.11.12 18:07</div><h3>대균열</h3><p>퇴근길 한강 위 하늘에 첫 게이트 '제로 게이트'가 열렸다. 하늘이 7초 동안 하얗게 변했다 — 백야 7초. 사망·실종 1만 2천 명.</p><span class="news">[속보] 한강 위 하늘에 '문'… 7초간 하얗게</span></div>
+    <div class="ev"><div class="when">2016~2017</div><h3>자경단 시대</h3><p>전국에 작은 게이트 수백 개. 첫 각성자가 된 10대들이 밤거리를 지켰다. 훗날 '7초 세대'라 불린다.</p></div>
+    <div class="ev"><div class="when">2017.03</div><h3>S급 여명, 2차 범람 저지</h3><p>제로 게이트의 두 번째 범람을 혼자 막아 낸 흰 코트의 히어로. 국민 영웅이 됐다.</p><span class="news">"무서우면 내 등만 봐. 7초면 끝나."</span></div>
+    <div class="ev"><div class="when">2018</div><h3>국가게이트관리국 설립</h3><p>각성자관리법 시행. 국가 공인 '히어로'와 민간 '헌터'가 나뉘었다. 히어로 라이선스 1번은 여명.</p></div>
+    <div class="ev"><div class="when">2019</div><h3>제로존 봉쇄</h3><p>제로 게이트 반경 3km 봉쇄. 같은 해 부산 흑색 게이트에서 사흘 만에 돌아온 팀이 말했다. "안에서 2년을 지냈다."</p></div>
+    <div class="ev"><div class="when">2020</div><h3>5대 길드 체제</h3><p>길드 허가제·헌터 랭킹·게이트 입찰제. 플레임·백호·아르고·은하·묵.</p></div>
+    <div class="ev"><div class="when">2021</div><h3>국립 히어로 아카데미 한빛 개교</h3><p>인천 앞바다 인공섬 한빛도. 만 19세 이상 각성자의 3년제 대학 과정. 10대의 '꿈의 학교'.</p></div>
+    <div class="ev"><div class="when">2023</div><h3>홍대 사건</h3><p>교단 열린문이 처음으로 게이트를 '인위로' 열었다. 같은 해, 비각성자 강서준이 국관 국장이 됐다.</p></div>
+    <div class="ev"><div class="when">2024</div><h3>여명 은퇴</h3><p>기자회견도 없이 국관 보도자료 세 줄. 이유는 공개되지 않았다.</p></div>
+    <div class="ev"><div class="when">2025</div><h3>게이트, 처음으로 늘다</h3><p>개방 수가 전년보다 18% 늘었다. 익명 커뮤니티 '문갤'에 괴담이 돈다. "10주기에 큰 게 온다."</p><span class="news">밈: "11월 12일엔 휴가 써라"</span></div>
+    <div class="ev start"><div class="when">2026.03.02</div><h3>한빛 입학식 <span class="tag">이야기 시작</span></h3><p>인장 측정장. 판독기에 뜬 숫자 하나 — "잔향 0. 측정 불가." 당신은 꼴찌 반, 1학년 6반에 배정된다.</p></div>
+    <div class="ev"><div class="when">2026.06.03</div><h3>서울시장 선거</h3><p>'제로존 단계 해제·한강 재생'을 내건 후보가 당선됐다.</p></div>
+    <div class="ev"><div class="when">2026.08.12</div><h3>성수동 B급 게이트 브레이크 <span class="tag other">같은 해, 다른 이야기 · 준비 중</span></h3><p>공략이 늦어진 게이트에서 몬스터가 쏟아졌다. 사망 9명. 길드 책임론.</p></div>
+    <div class="ev"><div class="when">2026.09.01</div><h3>국관 신입 720명 특채 <span class="tag other">같은 해, 다른 이야기 · 준비 중</span></h3><p>평년의 2.4배. 왜 올해만 이렇게 많이 뽑았는지는 아무도 말하지 않는다.</p></div>
+    <div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:7em"></span> <span class="stamp">국관 기밀</span></h3></div>
+    <div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:4em"></span> <span class="bar" style="width:5em"></span> <span class="stamp">국관 기밀</span></h3></div>
+    <div class="ev redacted"><div class="when">2026.10.<span class="bar" style="width:1.4em"></span></div><h3><span class="bar" style="width:9em"></span> <span class="stamp">국관 기밀</span></h3></div>
+    <div class="ev final"><div class="when">2026.11.12 18:07</div><h3>?</h3><p>10년 전, 그 시각.</p></div>
+  </div>
+</div></section>
+
+<section id="places"><div class="wrap">
+  <div class="sec-head"><div class="latin">PLACES</div><h2>장소</h2><div class="divider"><i></i></div></div>
+  <div class="places">
+    <figure class="place"><img src="img/bg_zerozone.webp" alt="버려진 한강공원 위 밤하늘에 떠 있는 거대한 흰 고리" loading="lazy" width="960" height="657"><figcaption>제로존<small>10년째 멈춘 한강변</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_island.webp" alt="바다 위 인공섬의 하얀 캠퍼스와 돔" loading="lazy" width="960" height="657"><figcaption>한빛도<small>인천 앞바다 인공섬</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_measure.webp" alt="판독 키오스크가 늘어선 측정장" loading="lazy" width="960" height="657"><figcaption>측정장<small>입학식, 인장 판독</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_classroom.webp" alt="바다가 보이는 계단식 강의실" loading="lazy" width="960" height="657"><figcaption>교실<small>6반만 창문 하나가 금 가 있다</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_dome.webp" alt="그을음과 서리 자국이 겹친 거대한 흰 돔 훈련장" loading="lazy" width="960" height="657"><figcaption>훈련장(돔)<small>벽에 RP 순위 전광판</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_dorm.webp" alt="밤바다가 보이는 2인실 기숙사" loading="lazy" width="960" height="657"><figcaption>기숙사<small>점호 벨, 복도 슬리퍼 소리</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_rooftop.webp" alt="노을 진 옥상과 바다" loading="lazy" width="960" height="657"><figcaption>옥상<small>빈 소환진이 그려진 자리</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_infirmary.webp" alt="커튼 친 침대와 정화 장비가 있는 보건실" loading="lazy" width="960" height="657"><figcaption>보건실<small>6반의 피난처</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_cafeteria.webp" alt="바다가 보이는 긴 식탁의 학생 식당" loading="lazy" width="960" height="657"><figcaption>식당<small>반마다 앉는 자리가 정해져 있다</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_under.webp" alt="전국 지도에 빛나는 점이 찍힌 지하 관제실" loading="lazy" width="960" height="657"><figcaption>광화문 언더<small>국관 본부 관제실</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_alley.webp" alt="비 오는 밤 골목 허공에 열린 푸른 문과 경광등" loading="lazy" width="960" height="657"><figcaption>골목의 게이트<small>노란 테이프, 젖은 쇠 냄새</small></figcaption></figure>
+    <figure class="place"><img src="img/bg_dungeon.webp" alt="푸른 수정이 박힌 어두운 동굴" loading="lazy" width="960" height="657"><figcaption>던전<small>회색 천장, 둔하게 울리는 소리</small></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="hanbit"><div class="wrap">
+  <div class="sec-head"><div class="latin">CHARACTERS</div><h2>등장인물</h2><div class="divider"><i></i></div></div>
+  <p class="lead">등장인물은 전원 성인입니다. 잔향, 능력의 비밀, 숨은 사정은 플레이하며 알게 됩니다.</p>
+  <div class="filters" role="group" aria-label="인물 분류">
+    <button type="button" data-f="all" aria-pressed="true">전체</button><button type="button" data-f="c6" aria-pressed="false">1학년 6반</button><button type="button" data-f="c1" aria-pressed="false">1학년 1반</button><button type="button" data-f="hb" aria-pressed="false">한빛</button><button type="button" data-f="out" aria-pressed="false">바깥</button>
+  </div>
+  <div class="chars" id="chars"></div>
+</div></section>
+
+<section id="start"><div class="wrap">
+  <div class="sec-head"><div class="latin">START</div><h2>시작 설정과 엔딩</h2><div class="divider"><i></i></div></div>
+  <div class="starts">
+    <div class="box"><h3>입학식 <span class="lvl">보통</span></h3><p>3월 2일 인장 측정장. "잔향 0. 측정 불가." 배정된 곳은 문제아만 모인 1학년 6반. 대범람까지 D-255.</p></div>
+    <div class="box"><h3>승강 시험 전날 <span class="lvl">어려움</span></h3><p>7월 13일 밤. 6반은 랭킹 포인트 꼴찌, 내일은 1학기 승강 시험. 반장 서하늘의 잔향은 이미 87.</p></div>
+    <div class="box"><h3>자유 설정</h3><p>등급·계열·반·시작 시점을 직접 정한다.</p></div>
+  </div>
+  <div class="endings">
+    <div class="end sr"><div class="g">SR</div><h4>???</h4><p>숨은 엔딩</p></div>
+    <div class="end"><div class="g">R</div><h4>6반, 1반이 되다</h4><p>반 전체가 오르내린다</p></div>
+    <div class="end"><div class="g">R</div><h4>문지기의 손</h4><p>어둠 루트</p></div>
+    <div class="end"><div class="g">N</div><h4>6반 해체</h4><p>꼴찌 반의 끝</p></div>
+    <div class="end"><div class="g">N</div><h4>작은 게이트</h4><p>잔향의 끝</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="logo" style="font-size:26px">ZERO GATE</div>
+  <p>크랙(crack.wrtn.ai) 스토리 《ZERO GATE｜한빛 아카데미》 소개 페이지</p>
+  <span class="cta" aria-disabled="true">크랙에서 플레이하기 · 공개 준비 중</span>
+  <p style="margin-top:22px">등장인물은 모두 성인이며 실제 인물·단체와 관계없습니다. 이미지는 작품용으로 만든 일러스트입니다.</p>
+</div></footer>
+
+<script>
+const C=[
+ {k:'seohaneul',f:'c6',aff:'1학년 6반 · 반장',n:'서하늘',t:['D급 · 방출(번개)','책임감','성실','무리함'],p:'출력은 A급인데 잔향이 너무 빨리 차서 6반으로 강등됐다. 6반이 해체될까 봐 혼자 다 짊어지고, 힘들수록 웃는다.',q:'서하늘┃「괜찮아요, 제가 할게요. 반장이니까.」'},
+ {k:'kangyerin',f:'c6',aff:'1학년 6반',n:'강예린',t:['C급 · 변이(늑대)','털털','싸움꾼','순정'],p:'말보다 주먹이 빠른 싸움꾼. 잔향이 오르면 늑대 귀와 꼬리가 튀어나와 숨길 수 없다(본인이 제일 창피해한다).',q:'강예린┃「…귀 보지 마. 진짜 보지 말라고.」'},
+ {k:'inabi',f:'c6',aff:'1학년 6반',n:'이나비',t:['E급 · 감응(독심)','소심','다정','예민'],p:'남의 속마음이 의지와 상관없이 들려서 사람 많은 곳을 피한다. 그런데 이상하게도, 당신 옆은 조용하다.',q:'이나비┃「…당신 옆은 조용해서 좋아요.」'},
+ {k:'ryusia',f:'c6',aff:'1학년 6반',n:'류시아',t:['측정 불가 · 소환','무표정','엉뚱','단답'],p:'손목에 별 인장이 있는데 계약한 소환수가 한 번도 나온 적이 없다. 옥상에서 빈 소환진을 나뭇가지로 찌르는 게 취미.',q:'류시아┃「오늘은 안 나온대. 내일도.」'},
+ {k:'ohjunho',f:'c6',aff:'1학년 6반',n:'오준호',t:['E급 · 강화','분위기 메이커','정보통','의리'],p:'교내 소문부터 바깥 뉴스까지 누구보다 빨리 안다. 집에는 각성 사실을 숨기고 산다.',q:'오준호┃「야, 들었냐? 1반 수석이 우리 반 보고 세금 낭비래ㅋㅋ」'},
+ {k:'baekseoyeon',f:'c1',aff:'1학년 1반 · 수석',n:'백서연',t:['A급 · 방출(얼음)','냉정','자존심','정직'],p:'6반을 \'세금 낭비\'라 부르는 1학년 수석. 차갑지만 거짓말을 못 하고, 인정한 상대에게는 정직하다.',q:'백서연┃「측정 불가가 여기서 뭘 하죠? 훈련장 예약은 1반이 먼저예요.」'},
+ {k:'baekjihwan',f:'c1',aff:'1학년 1반',n:'백지환',t:['A급 · 강화','오만','승부욕','열등감'],p:'플레임 길드장 백도하의 동생. 형과 비교당하는 게 세상에서 제일 싫다.',q:'백지환┃「형 얘기 꺼내지 마. 난 백도하 동생이 아니라 백지환이야.」'},
+ {k:'seoihyeon',f:'hb',aff:'3학년 · 학생회장',n:'서이현',t:['A급 · 감응(공감)','완벽','온화','비밀'],p:'성적도 인망도 완벽한 \'차기 1급 히어로\'. 6반에게도 다정한, 6반이 유일하게 믿는 선배.',q:'서이현┃「힘들면 학생회실로 와. 차 한 잔은 늘 있어.」'},
+ {k:'hanyuna',f:'hb',aff:'한빛 보건실 정화사',n:'한유나',t:['비각성자','피곤','다정','원칙'],p:'국관 인증 장비로 잔향을 빼 주지만 하루 세 명이 한도. 6반이 제일 자주 찾는 피난처.',q:'한유나┃「아프면 아프다고 해요. 참는 거, 하나도 안 멋있어요.」'},
+ {k:'jin',f:'hb',aff:'2학기 전학생',n:'진',t:['등급 확인 중','낯섦','호기심','비밀'],p:'비를 손바닥으로 받아 보고, 색깔 이름을 묻고, 음식을 처음 먹는 것처럼 먹는다. 말투가 어딘가 옛스럽다.',q:'진┃「이건… 무슨 색이라고 부릅니까?」'},
+ {k:'choimugyeom',f:'hb',aff:'6반 담임 · 전투 교관',n:'최무겸',t:['전 A급 · 강화','엄격','의리','속정'],p:'담배를 끊고 막대사탕을 무는 호랑이 교관. 7초 세대이자 여명의 옛 동료. 6반 학생 생일을 수첩에 적어 둔다.',q:'최무겸┃「넘어졌으면 일어나. 다음. …다친 데는 나중에 보건실 가.」'},
+ {k:'yunsera',f:'hb',aff:'한빛 이사장',n:'윤세라',t:['A급 · 감응','우아','다정','단호'],p:'태성 그룹의 막내딸인데 한빛에는 태성 장비를 들이지 않는다. 1학년 180명의 이름을 다 외운다.',q:'윤세라┃「선생님은 다 알아요. 그러니까, 말해도 돼요.」'},
+ {k:'yuharin',f:'out',aff:'방송 헌터 · 구독 410만',n:'유하린',t:['밝음','겁쟁이','진심'],p:'채널 \'하린의 문 열면 생방\'. 국관 발표보다 빠른 게이트 생중계. 사망 장면은 한 번도 내보낸 적이 없다.',q:'유하린┃「자, 여러분! 문 열었습니다~ 오늘도 다 같이 살아서 나가요!」'},
+ {k:'baekdoha',f:'out',aff:'플레임 길드장 · 헌터 랭킹 1위',n:'백도하',t:['인기','계산','야심'],p:'방송에선 다정한 형, 카메라가 꺼지면 숫자만 말한다. 7초 세대 자경단 출신. 동생 백지환은 절대 방송에 부르지 않는다.',q:'백도하┃「구독, 좋아요, 그리고 살아서 돌아오기. 셋 다 해주실 거죠?」'},
+ {k:'hansoyul',f:'out',aff:'국관 현장팀 에이스',n:'한소율',t:['B급 · 강화','무뚝뚝','책임감','의리'],p:'출동 전마다 뺨의 반창고를 새것으로 갈아 붙인다. 신입에게는 첫날 사표 양식부터 준다.',q:'한소율┃「언제든 내도 돼. 근데 문 앞에선 안 돼.」'},
+ {k:'yeomyeong',f:'out',aff:'은퇴한 S급 1위',n:'여명',t:['전설','다정','부재'],p:'2017년 서울을 구한 국민 영웅. 2024년 보도자료 세 줄로 은퇴했고, 그 뒤로 아무도 그녀를 보지 못했다.',q:'여명┃「무서우면 내 등만 봐. 7초면 끝나.」'},
+ {k:'unknown',f:'out',aff:'???',n:'???',t:['???'],p:'아직 만나지 않은 누군가.',q:'',m:true},
+];
+const box=document.getElementById('chars');
+box.innerHTML=C.map(c=>`<article class="char${c.m?' mystery':''}" data-f="${c.f}"><div class="pic"><img src="img/${c.k}.webp" alt="${c.m?'정체를 알 수 없는 인물의 흐린 실루엣':c.n}" loading="lazy" width="960" height="657"></div><div class="body"><div class="aff">${c.aff}</div><h3>${c.n}</h3><div class="tags">${c.t.map(x=>`<span>${x}</span>`).join('')}</div><p>${c.p}</p>${c.q?`<div class="line">${c.q}</div>`:''}</div></article>`).join('');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+  const f=b.dataset.f; document.querySelectorAll('.char').forEach(c=>{c.hidden=!(f==='all'||c.dataset.f===f)});
+}));
+</script>
+</body>
+</html>
