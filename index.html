@@ -122,17 +122,10 @@ th{color:var(--soft);font-weight:500;font-size:13px}
 .line{font-family:"Gowun Batang",serif;color:var(--soft);font-size:15px;border-top:1px solid var(--line);padding-top:10px}
 .char.mystery h3{letter-spacing:.3em}
 
-/* 시작·엔딩 */
+/* 시작 설정 */
 .starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 @media (max-width:760px){.starts{grid-template-columns:1fr}}
 .lvl{display:inline-block;font-size:12px;padding:1px 8px;border:1px solid var(--line);color:var(--soft);margin-left:6px}
-.endings{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:20px}
-@media (max-width:760px){.endings{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.end{background:var(--card);border:1px solid var(--line);padding:14px 12px;text-align:center}
-.end .g{font-family:"Cinzel",serif;font-size:13px;color:var(--gate2)}
-.end h4{margin:4px 0;font-family:"Gowun Batang",serif;font-size:16px}
-.end p{margin:0;font-size:13px;color:var(--muted)}
-.end.sr{border-color:rgba(143,184,255,.5);box-shadow:0 0 18px rgba(91,151,255,.15)}
 
 footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13px}
 .cta{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid var(--gate2);color:var(--text);text-decoration:none;font-weight:700;background:rgba(91,151,255,.12)}
@@ -142,7 +135,7 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13px}
 <body>
 
 <nav aria-label="목차"><div class="wrap">
-  <a href="#world">세계관</a><a href="#timeline">연표</a><a href="#places">장소</a><a href="#hanbit">등장인물</a><a href="#start">시작·엔딩</a>
+  <a href="#world">세계관</a><a href="#timeline">연표</a><a href="#places">장소</a><a href="#hanbit">등장인물</a><a href="#start">시작 설정</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
@@ -269,18 +262,11 @@ footer{padding:40px 0 56px;text-align:center;color:var(--muted);font-size:13px}
 </div></section>
 
 <section id="start"><div class="wrap">
-  <div class="sec-head"><div class="latin">START</div><h2>시작 설정과 엔딩</h2><div class="divider"><i></i></div></div>
+  <div class="sec-head"><div class="latin">START</div><h2>시작 설정</h2><div class="divider"><i></i></div></div>
   <div class="starts">
     <div class="box"><h3>입학식 <span class="lvl">보통</span></h3><p>3월 2일 인장 측정장. "잔향 0. 측정 불가." 배정된 곳은 문제아만 모인 1학년 6반. 대범람까지 D-255.</p></div>
     <div class="box"><h3>승강 시험 전날 <span class="lvl">어려움</span></h3><p>7월 13일 밤. 6반은 랭킹 포인트 꼴찌, 내일은 1학기 승강 시험. 반장 서하늘의 잔향은 이미 87.</p></div>
     <div class="box"><h3>자유 설정</h3><p>등급·계열·반·시작 시점을 직접 정한다.</p></div>
-  </div>
-  <div class="endings">
-    <div class="end sr"><div class="g">SR</div><h4>???</h4><p>숨은 엔딩</p></div>
-    <div class="end"><div class="g">R</div><h4>6반, 1반이 되다</h4><p>반 전체가 오르내린다</p></div>
-    <div class="end"><div class="g">R</div><h4>문지기의 손</h4><p>어둠 루트</p></div>
-    <div class="end"><div class="g">N</div><h4>6반 해체</h4><p>꼴찌 반의 끝</p></div>
-    <div class="end"><div class="g">N</div><h4>작은 게이트</h4><p>잔향의 끝</p></div>
   </div>
 </div></section>
 </main>
